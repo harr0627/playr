@@ -143,7 +143,7 @@ ul{
   grid-template-areas:"main"
                       "info"
                       "buttons";
-  height: 100vh;
+  max-height: 100vh;
   width: 100vw;
 }
 
@@ -152,12 +152,13 @@ ul{
   display:flex;
   justify-content: center;
   align-items: center;
+  margin:0;
 }
 .songImage{
   grid-area: main;
   max-width: 70vw;
   max-height:70vw;
-  margin: 1.5rem auto;
+  margin-top:1.5rem;
 }
 #songDetails{
   grid-area: info;
@@ -167,12 +168,15 @@ grid-area: info;
 font-size: 1.25rem;
 font-weight:700;
 color: #666;
+margin-top:0.5rem;
+margin-bottom:0;
 }
 .songArtist{
   grid-area: info;
   font-size: 1rem;
   font-weight: 400;
-  color:#666
+  color:#666;
+  margin: 0;
 }
 .timer{
   display:grid;
@@ -190,6 +194,7 @@ color: #666;
   margin:0 1rem;
 }
 input[type="range"] {
+  color: #666;
   width:100%;
 }
 
